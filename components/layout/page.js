@@ -3,11 +3,10 @@ import SEO from '@/components/seo'
 import * as Marketing from '@/marketing'
 
 export default function PageLayout({ children, page }) {
-  console.log(page);
   const pageNewsletter = page?.marketing?.find(
     (block) => block.__typename === 'Newsletter'
   )
-
+  
   return (
     <>
       {page?.seo && <SEO {...page.seo} />}
