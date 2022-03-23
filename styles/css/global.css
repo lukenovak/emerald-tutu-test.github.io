@@ -1,0 +1,26 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
+}
+
+span {
+    font-weight: bold;
+}
+
+.circle {
+    border-radius: 50%
+}
+
+.gradient-background {
+    color: #eeeeee;
+    background: linear-gradient(0.25turn, blue, green);
+}
+
+.hidden-link a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.hidden-link a:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
