@@ -1,5 +1,6 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
 }
 
 span {
@@ -23,4 +24,9 @@ span {
 .hidden-link a:hover {
     color: #aaaaaa;
     text-decoration: none;
+}
+
+.blue-bg {
+    background: blue;
+    color: #ffffff;
 }
