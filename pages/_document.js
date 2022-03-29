@@ -10,6 +10,13 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+        <link
+            rel="preload"
+            href="/fonts/MonumentVentileFullmoonGX.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
           <link
             href="https://unpkg.com/@csstools/normalize.css"
             rel="stylesheet"
