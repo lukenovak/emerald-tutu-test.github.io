@@ -31,14 +31,16 @@ span {
     color: #ffffff;
 }
 
-h1 {
+.font-monument {
     font-family: 'Monument Ventile Fullmoon';
+    letter-spacing: .1em;
 }
 
-h2 {
-    font-family: 'Monument Ventile Fullmoon';  
+.h1 {
+    font-size: 4em;
 }
 
-h4 {
-    font-family: 'Monument Ventile Fullmoon';  
+body {
+    font-size: 1.1em;
+    font-weight: 500;
 }
