@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Footer from '../footer'
+import Header from '../header'
 
 function PreviewBanner({ enabled = false }) {
   if (!enabled) return null
@@ -27,6 +28,7 @@ export default function SiteLayout({ children, page, preview = false }) {
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
     >
       <PreviewBanner enabled={preview} />
+      {page?.header && <Header></Header>}
       <div style={{ flexGrow: 1 }}>{children}</div>
       {page?.footer && <Footer {...page.footer} />}
     </div>

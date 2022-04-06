@@ -31,6 +31,11 @@ span {
     color: #ffffff;
 }
 
+.green-bg {
+    background: greenyellow;
+    color: blue;
+}
+
 .font-monument {
     font-family: 'Monument Ventile Fullmoon';
     letter-spacing: .1em;
@@ -38,6 +43,13 @@ span {
 
 .h1 {
     font-size: 4em;
+}
+
+.anchor:target::before {
+    content: "";
+    display: block;
+    height: 1.5rem; /* fixed header height*/
+    margin: -1.5rem 0 0; /* negative fixed header height */
 }
 
 body {
