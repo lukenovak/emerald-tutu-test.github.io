@@ -1,4 +1,5 @@
 export { default as NavigationItem } from './navigation-item'
-export { default as TextBlock } from './text-block'
+export { default as Text } from './text'
 export { default as BigMenu } from './big-menu'
-export { default as PictureBlock } from './picture-block'
+export { default as Picture } from './picture'
+export { default as Section } from './section'
