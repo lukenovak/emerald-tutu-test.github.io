@@ -1,4 +1,4 @@
-export default function TextBlock({header, text, highlight}) {
+export default function TextBlock({header, text, highlight, isRetractable}) {
 
     return (
         <div className="container">
