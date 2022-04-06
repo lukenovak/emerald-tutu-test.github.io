@@ -5,7 +5,7 @@ import { parsePageData } from '@/utils/_parsePageData'
 import Wrapper from '@/components/wrapper'
 
 export default function IndexPage({ page }) {
-  return (<div className='gradient-background'>
+  return (<div className='gradient-background h-100'>
     <Wrapper {...page} />
     </div>)
 }

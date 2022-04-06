@@ -26,6 +26,7 @@ export default function SiteLayout({ children, page, preview = false }) {
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+      className={page?.slug && page.slug == "home" ? "gradient-background" : ""}
     >
       <PreviewBanner enabled={preview} />
       {page?.header && <Header></Header>}

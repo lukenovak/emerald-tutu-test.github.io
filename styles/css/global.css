@@ -1,6 +1,12 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
     color: blue;
+    font-weight: 500;
+    overflow-x:hidden;
+}
+
+.text {
+    font-size: 1.1rem;
 }
 
 span {
@@ -52,7 +58,6 @@ span {
     margin: -1.5rem 0 0; /* negative fixed header height */
 }
 
-body {
-    font-size: 1.1em;
-    font-weight: 500;
+html, body {
+    height: 100%;
 }
