@@ -61,3 +61,19 @@ span {
 html, body {
     height: 100%;
 }
+
+.annotation {
+    overflow: hidden;
+}
+
+.annotation .annotation-text {
+    width: 0px;
+    display: none;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.annotation:hover .annotation-text {
+    display: block;
+    width: auto;
+}
