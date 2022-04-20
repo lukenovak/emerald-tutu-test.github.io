@@ -1,3 +1,5 @@
 export default function Header() {
-    return <div className="green-bg w-100 position-fixed"><a href="/">home</a></div>
+    return <div className="text-center green-bg header hidden-link w-100 position-fixed">
+        <a href="/">The Emerald Tutu</a>
+    </div>
 }
