@@ -42,9 +42,26 @@ span {
     color: blue;
 }
 
+.green-bg.hidden-link a {
+    color: blue;
+}
+
+.green-bg.hidden-link a:hover {
+    color: skyblue;
+}
+
+.header {
+    z-index: 1100;
+}
+
 .font-monument {
     font-family: 'Monument Ventile Fullmoon';
     letter-spacing: .1em;
+}
+
+.blue-border {
+    border: blue;
+    border-width: .5rem;
 }
 
 .h1 {
