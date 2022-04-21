@@ -19,7 +19,7 @@ span {
 
 .gradient-background {
     color: #eeeeee;
-    background: linear-gradient(0.25turn, blue, green);
+    background: linear-gradient(0.25turn, blue, limegreen);
 }
 
 .hidden-link a {
@@ -38,7 +38,7 @@ span {
 }
 
 .green-bg {
-    background: greenyellow;
+    background: limegreen;
     color: blue;
 }
 
@@ -60,8 +60,8 @@ span {
 }
 
 .blue-border {
-    border: blue;
-    border-width: .5rem;
+    border: blue solid;
+    border-width: .3rem;
 }
 
 .h1 {
