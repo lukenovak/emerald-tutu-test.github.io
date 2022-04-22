@@ -1,6 +1,9 @@
 import Image from 'next/image'
+import { useState } from 'react'
+import { Collapse } from 'react-bootstrap'
 
 export default function Person({name, title, bio, photo}) {
+    const [open, setOpen] = useState(false)
     return (
         <div className="container p-0 my-3">
             <div className="row mb-3">
@@ -13,14 +16,19 @@ export default function Person({name, title, bio, photo}) {
                         />
                     </div>
                 )}
-                <div className="col-8 my-auto">
+                <div className="col-6 my-auto">
                     <h4>{name}</h4>
                     <h5>{title}</h5>
                 </div>
+                <div className='col-2 my-auto'>
+                    <button className='btn blue-bg' onClick={() => setOpen(!open)}>Bio</button>
+                </div>
             </div>
-            <div className='row'>
-                <p className="p-0">{bio}</p>
-            </div>
+            <Collapse in={open}>
+                <div className='row'>
+                    <p className="p-0">{bio}</p>
+                </div>
+            </Collapse>
         </div>
         
     )

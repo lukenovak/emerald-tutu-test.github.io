@@ -6,7 +6,7 @@ export default function BigMenu({pages}) {
     return(
         <div className="container mx-auto h1 hidden-link">
             {pages.map((page) => {
-                const [open, setOpen] = useState(false);
+                const [open, setOpen] = useState(false)
                 // This should be a PageNav but we need some more custom code for the collapsing
                 return (
                     <div 
