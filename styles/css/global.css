@@ -64,10 +64,6 @@ span {
     border-width: .3rem;
 }
 
-.h1 {
-    font-size: 4em;
-}
-
 .anchor:target::before {
     content: "";
     display: block;
