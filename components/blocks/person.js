@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 export default function Person({name, title, bio, photo}) {
-    console.log(photo)
     return (
         <div className="container p-0 my-3">
             <div className="row mb-3">

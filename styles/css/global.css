@@ -94,3 +94,7 @@ html, body {
     display: block;
     width: auto;
 }
+
+.text-green {
+    color: limegreen;
+}
