@@ -8,8 +8,8 @@ export default function Person({name, title, bio, photo}) {
         <div className="container p-0 my-3">
             <div className="row mb-3">
                 {photo && (
-                    <div className="col-4 p-0 blue-border d-flex">
-                        <Image 
+                    <div className="col-4 p-0 person-mh blue-border d-flex">
+                        <Image
                             src={photo.url}
                             height={photo.height}
                             width={photo.width}
@@ -17,7 +17,7 @@ export default function Person({name, title, bio, photo}) {
                     </div>
                 )}
                 <div className="col-6 my-auto">
-                    <h4>{name}</h4>
+                    <h4 className='fw-bold text-green'>{name}</h4>
                     <h5>{title}</h5>
                 </div>
                 <div className='col-2 my-auto'>
