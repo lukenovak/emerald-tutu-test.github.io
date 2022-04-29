@@ -94,3 +94,8 @@ html, body {
 .text-green {
     color: limegreen;
 }
+
+.person-mh {
+    max-height: 240px;
+    max-width: 240px;
+}
