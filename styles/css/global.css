@@ -1,0 +1,101 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    font-weight: 500;
+    overflow-x:hidden;
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+.circle {
+    border-radius: 50%
+}
+
+.gradient-background {
+    color: #eeeeee;
+    background: linear-gradient(0.25turn, blue, limegreen);
+}
+
+.hidden-link a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.hidden-link a:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.blue-bg {
+    background: blue;
+    color: #ffffff;
+}
+
+.green-bg {
+    background: limegreen;
+    color: blue;
+}
+
+.green-bg.hidden-link a {
+    color: blue;
+}
+
+.green-bg.hidden-link a:hover {
+    color: skyblue;
+}
+
+.header {
+    z-index: 1100;
+}
+
+.font-monument {
+    font-family: 'Monument Ventile Fullmoon';
+    letter-spacing: .1em;
+}
+
+.blue-border {
+    border: blue solid;
+    border-width: .3rem;
+}
+
+.anchor:target::before {
+    content: "";
+    display: block;
+    height: 1.5rem; /* fixed header height*/
+    margin: -1.5rem 0 0; /* negative fixed header height */
+}
+
+html, body {
+    height: 100%;
+}
+
+.annotation {
+    overflow: hidden;
+}
+
+.annotation .annotation-text {
+    width: 0px;
+    display: none;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.annotation:hover .annotation-text {
+    display: block;
+    width: auto;
+}
+
+.text-green {
+    color: limegreen;
+}
+
+.person-mh {
+    max-height: 240px;
+    max-width: 240px;
+}
