@@ -28,7 +28,7 @@ export default function SiteLayout({ children, page, preview = false }) {
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
       className={page?.slug && page.slug == "home" ? "gradient-background" : ""}
     >
-      <PreviewBanner enabled={preview} />
+      <PreviewBanner enabled={false} />
       {page?.header && <Header></Header>}
       <div style={{ flexGrow: 1 }}>{children}</div>
       {page?.footer && <Footer {...page.footer} />}
