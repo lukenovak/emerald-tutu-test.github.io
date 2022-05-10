@@ -6,7 +6,7 @@ export default function AnnotatedPicture({tooltip, picture}) {
     return <div className="container text-center">
         <div className="position-relative d-inline-flex">
             <Picture {...picture}/>
-            {tooltip.map((tooltip) => <Tooltip {...tooltip}/>)}
+            {tooltip && tooltip != undefined && tooltip.map((tooltip) => <Tooltip {...tooltip}/>)}
         </div>
     </div>
 }
