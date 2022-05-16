@@ -1,5 +1,4 @@
 export default function Tooltip({xPos, yPos, number, text}) {
-    console.log(number)
     const positionStyles = {
         left: "" + xPos + "px",
         top: "" + yPos + "px",
