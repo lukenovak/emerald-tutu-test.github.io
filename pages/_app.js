@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/css/global.css'
 import '../styles/css/fonts.css'
+import '../styles/css/components/image-carousel.css'
 
 import { DefaultSeo } from 'next-seo'
 import { SiteLayout } from '@/layout'

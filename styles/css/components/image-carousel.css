@@ -1,0 +1,18 @@
+.carousel-arrow {
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.carousel-arrow:hover {
+    color: #fff;
+}
+  
+.right-arrow {
+right: 20px;
+}
+
+.left-arrow {
+left: 20px;
+}

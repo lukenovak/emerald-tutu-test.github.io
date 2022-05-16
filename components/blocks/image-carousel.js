@@ -14,11 +14,12 @@ export default function ImageCarousel({images, id}) {
     };
 
     return (
-        <div id={id} className="container">
-            <div onClick={prevSlide}>&lt;</div>
-            <div onClick={nextSlide}>&gt;</div>
+        <div id={id} className="container position-relative">
+            <div className="carousel-arrow left-arrow" onClick={prevSlide}>&lt;</div>
+            <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>
             {images.map((img, idx) =>
-                <div key={idx}>
+                <div 
+                    key={idx}>
                     {idx === active && (
                         <Image src={img.url}
                             width={img.width}
