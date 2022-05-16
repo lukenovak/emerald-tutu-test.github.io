@@ -1,5 +1,4 @@
 export default function VimeoEmbeddable({videoID, iframeSrc}) {
-    console.log(iframeSrc)
     // Adapted from Vimeo's embedding code
     return (
         <div id={"player-" + videoID} className="mb-3 container">

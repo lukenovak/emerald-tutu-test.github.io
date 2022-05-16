@@ -57,7 +57,20 @@ span {
 .font-monument {
     font-family: 'Monument Ventile Fullmoon';
     letter-spacing: .1em;
+    transition: font-variation-settings 500ms ease;
 }
+
+.font-monument-small {
+    font-family: 'Monument Ventile Fullmoon';
+    letter-spacing: .1em;
+    font-variation-settings: "wght" 40, "slnt" 0;
+}
+
+@media (hover: hover) {
+    .font-monument:hover {
+      font-variation-settings: "wght" 40, "slnt" 0;
+    }
+  }
 
 .blue-border {
     border: blue solid;
@@ -89,6 +102,7 @@ html, body {
 .annotation:hover .annotation-text {
     display: block;
     width: auto;
+    z-index: 1;
 }
 
 .text-green {
