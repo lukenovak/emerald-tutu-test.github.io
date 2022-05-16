@@ -9,7 +9,8 @@ export default function BigMenu({pages}) {
                 const [open, setOpen] = useState(false)
                 // This should be a PageNav but we need some more custom code for the collapsing
                 return (
-                    <div 
+                    <div
+                        key={page.id} 
                         id={"page" + page.title} 
                         className="row"
                         onMouseEnter={() => setOpen(!open)}
@@ -27,7 +28,7 @@ export default function BigMenu({pages}) {
                         <Collapse in={open}>
                         <div id={"pagenav-" + page.pageNumber + "-blocks"}>
                             {page.blocks.map((section) => 
-                                <div className="pl-2">
+                                <div className="pl-2" key={section.id}>
                                     <a href={page.slug + "#" + section.name}>{section.name}</a>
                                 </div>)}
                         </div>
