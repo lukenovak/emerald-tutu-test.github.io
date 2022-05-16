@@ -13,11 +13,12 @@ export default function BigMenu({pages}) {
                         key={page.id} 
                         id={"page" + page.title} 
                         className="row"
-                        onMouseEnter={() => setOpen(!open)}
-                        onMouseLeave={() => setOpen(!open)}
                         aria-expanded={open}
                     >
-                        <a href={"/" + page.slug} className="display-1 font-monument hidden-link text-center">
+                        <a href={"/" + page.slug} 
+                        className="display-1 font-monument hidden-link w-auto text-center"
+                        onMouseEnter={() => setOpen(!open)}
+                        onMouseLeave={() => setOpen(!open)}>
                             <div className="float-start me-3">
                                 {circleNum(page.pageNumber)}
                             </div>

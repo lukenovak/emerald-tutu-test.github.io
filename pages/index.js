@@ -3,11 +3,12 @@ import { graphcmsClient } from '@/lib/_client'
 import { pageQuery } from '@/lib/_queries'
 import { parsePageData } from '@/utils/_parsePageData'
 import Wrapper from '@/components/wrapper'
+import SiteHeading from '@/components/site-heading'
 
 export default function IndexPage({ page }) {
   return (<div className='gradient-background h-100'>
       <div className='mx-auto my-3 d-block text-center'>
-        <h1 className="font-monument">The Emerald Tutu</h1>
+        <SiteHeading text="The Emerald Tutu"/>
       </div>
     <Wrapper {...page} />
     </div>)
