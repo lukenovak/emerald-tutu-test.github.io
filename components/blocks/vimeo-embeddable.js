@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export default function VimeoEmbeddable({videoID, iframeSrc}) {
     // Adapted from Vimeo's embedding code
     return (
@@ -5,12 +7,12 @@ export default function VimeoEmbeddable({videoID, iframeSrc}) {
             <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
                 <iframe src={"" + iframeSrc} 
                         style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="autoplay; fullscreen; picture-in-picture" 
-                        allowfullscreen>     
+                        allowFullScreen>     
                 </iframe>
             </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
+            <Script src="https://player.vimeo.com/api/player.js"></Script>
         </div>
         
     )

@@ -7,5 +7,6 @@ export { default as Tooltip } from './tooltip'
 export { default as AnnotatedPicture } from "./annotated-picture"
 export { default as TooltipPicture } from "./tooltip-picture"
 export { default as PersonList } from "./person-list"
-export { default as VimeoEmbeddable} from "./vimeo-embeddable"
-export { default as ImageCarousel} from "./image-carousel"
+export { default as VimeoEmbeddable } from "./vimeo-embeddable"
+export { default as ImageCarousel } from "./image-carousel"
+export { default as CollapsibleText } from "./collapsible-text"
