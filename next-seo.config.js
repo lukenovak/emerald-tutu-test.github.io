@@ -1,6 +1,6 @@
-const description = `Learn how to build modern marketing websites, with localization and SEO, using GraphCMS, NextJS, Chakra UI, and Vercel.`
+const description = `The Emerald Tutu`
 const title = `Emerald Tutu`
-const url = `https://marketing-websites.withheadlesscms.com`
+const url = `https://www.theemeraldtutu.com`
 
 const seo = {
   title,

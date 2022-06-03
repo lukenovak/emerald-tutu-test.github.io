@@ -13,6 +13,7 @@ export default function Person({name, title, bio, photo}) {
                             src={photo.url}
                             height={photo.height}
                             width={photo.width}
+                            alt={name}
                         />
                     </div>
                 )}

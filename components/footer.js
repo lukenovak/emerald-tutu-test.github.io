@@ -8,8 +8,8 @@ export default function Footer({pages, address}) {
                     <div className="col-4">
                         <span className="align-self-center">{address}</span>
                         </div>
-                        {pages.map((page) => 
-                            <div className="col-2">
+                        {pages.map((page, idx) => 
+                            <div key={idx} className="col-2">
                                 <PageNav {...page}/>
                             </div>
                         )}
