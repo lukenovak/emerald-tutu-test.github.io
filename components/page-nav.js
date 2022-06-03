@@ -7,7 +7,7 @@ export default function PageNav({pageNumber, title, slug, blocks, id}, mode = AL
     return(
         <div key={id} className="hidden-link">
             <div className="d-inline font-weight-bold hidden-link">
-                <a className="font-monument-small" href={slug}>{circleNum(pageNumber)} {title}</a>
+                <a className="font-monument" href={slug}>{circleNum(pageNumber)} {title}</a>
             </div>
             {blocks && 
                 <div id={"pagenav-" + pageNumber + "-blocks"} className={mode == ONLY_SHOW_ON_CLICK ? "collapsible" : ""}>

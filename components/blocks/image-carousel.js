@@ -27,7 +27,7 @@ export default function ImageCarousel({images, id}) {
 
     return (
         <div id={id} className="container row">
-            <div className="position-relative d-flex m-auto" style={{height: maxHeight, width:maxWidth}}>
+            <div className="position-relative d-flex m-auto">
                 <div className="carousel-arrow left-arrow" onClick={prevSlide}>&lt;</div>
                 <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>
                 {images.map((img, idx) => 
