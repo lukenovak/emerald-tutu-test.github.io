@@ -37,6 +37,7 @@ export default function ImageCarousel({images, id}) {
                                 <Image src={img.url}
                                     width={img.width}
                                     height={img.height}
+                                    alt={"Carousel image number " + idx} // TODO: fix this
                                 />
                             )}
                         </div> 

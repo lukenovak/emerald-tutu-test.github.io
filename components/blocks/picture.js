@@ -7,6 +7,7 @@ export default function Picture({photo}) {
                 src={photo.url}
                 height={photo.height}
                 width={photo.width}
+                alt="picture" // TODO: add alt text to pictures
             />
         </div>
     )
