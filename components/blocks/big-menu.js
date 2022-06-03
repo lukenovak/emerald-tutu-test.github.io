@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function BigMenu({pages}) {
     return(
-        <div className="container mx-auto h1 hidden-link">
+        <div className="container mx-auto h3 hidden-link">
             {pages.map((page) => {
                 const [open, setOpen] = useState(false)
                 // This should be a PageNav but we need some more custom code for the collapsing
@@ -20,7 +20,7 @@ export default function BigMenu({pages}) {
                         }}}
                     >
                         <a href={"/" + page.slug} 
-                        className="display-1 font-monument hidden-link w-auto text-center"
+                        className="display-2 font-monument hidden-link w-auto text-center"
                         onMouseEnter={() => setOpen(!open)}
                         >
                             <div className="float-start me-3">
