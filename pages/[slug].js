@@ -47,16 +47,14 @@ export async function getStaticPaths({ locales }) {
     }
   `)
   
-  for (const locale of locales) {
-    paths = [
-      ...paths,
-      ...pages.map((page) => ({ params: { slug: page.slug }, locale }))
-    ]
-  }
+  paths = [
+    ...paths,
+    ...pages.map((page) => ({ params: { slug: page.slug }}))
+  ]
 
   return {
     paths,
-    fallback: 'blocking'
+    fallback: false
   }
 }
 

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useState } from 'react'
 import { Collapse } from 'react-bootstrap'
 
@@ -9,7 +8,7 @@ export default function Person({name, title, bio, photo}) {
             <div className="row mb-3">
                 {photo && (
                     <div className="col-4 p-0 person-mh blue-border d-flex">
-                        <Image
+                        <img
                             src={photo.url}
                             height={photo.height}
                             width={photo.width}

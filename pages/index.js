@@ -14,11 +14,11 @@ export default function IndexPage({ page }) {
     </div>)
 }
 
-export async function getStaticProps({ locale, preview = true }) {
+export async function getStaticProps({preview = false }) {
   const client = graphcmsClient(preview)
 
   const { page } = await client.request(pageQuery, {
-    locale,
+    //locale, * reenable if localizing on non-static export
     slug: 'home'
   })
 

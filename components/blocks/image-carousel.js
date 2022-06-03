@@ -1,5 +1,3 @@
-import image from "next/image";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function ImageCarousel({images, id}) {
@@ -34,7 +32,7 @@ export default function ImageCarousel({images, id}) {
                         <div className="m-auto"
                             key={idx}>
                             {idx === active && (
-                                <Image src={img.url}
+                                <img src={img.url}
                                     width={img.width}
                                     height={img.height}
                                     alt={"Carousel image number " + idx} // TODO: fix this
