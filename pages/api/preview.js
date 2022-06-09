@@ -1,5 +1,5 @@
 import { graphcmsClient } from '@/lib/_client'
-import { pageQuery, blogPostQuery } from '@/lib/_queries'
+import { pageQuery } from '@/lib/_queries'
 
 export default async function handler(req, res) {
   if (
@@ -13,8 +13,8 @@ export default async function handler(req, res) {
 
   const [rootSlug, nestedSlug] = req.query.slug.split('/')
 
-  const data = await client.request(nestedSlug ? blogPostQuery : pageQuery, {
-    slug: nestedSlug ? blogPostQuery : rootSlug,
+  const data = await client.request(pageQuery, {
+    slug: rootSlug,
     ...(rootSlug && { locale: 'en' })
   })
 
