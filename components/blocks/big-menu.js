@@ -5,18 +5,21 @@ import { useState } from "react";
 export default function BigMenu({pages}) {
     return(
         <div className="container mx-auto h3 hidden-link">
-            {pages?.map((page) => <BigMenuItem key={page.id} page={page}/>) }
+            {pages?.map((page, idx) =>
+            <div key={idx}>
+                <BigMenuItem {...page}/>
+            </div>) }
         </div>
     )
 }
 
 
-function BigMenuItem(key, page) {
+function BigMenuItem(page) {
+    console.log(page)
     const [open, setOpen] = useState(false)
     // This should be a PageNav but we need some more custom code for the collapsing
     return (
         <div
-            key={key}
             id={"page" + page.title} 
             className="row"
             aria-expanded={open}

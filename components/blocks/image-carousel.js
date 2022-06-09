@@ -35,10 +35,11 @@ export default function ImageCarousel({images, id}) {
                                 <img src={img.url}
                                     width={img.width}
                                     height={img.height}
-                                    alt={"Carousel image number " + idx} // TODO: fix this
+                                    alt={img?.altText}
                                 />
                             )}
-                        </div> 
+                            {img?.caption && <span>{img.caption}</span>}
+                        </div>
                     )}
             </div>
         </div>
