@@ -1,12 +1,13 @@
-export default function Picture({photo}) {
+export default function Picture({photo, altText, caption}) {
     return (
         <div className="container text-center">
-            <img 
+            <img
                 src={photo.url}
                 height={photo.height}
                 width={photo.width}
-                alt="picture" // TODO: add alt text to pictures
+                alt={altText} // TODO: add alt text to pictures
             />
+            {caption && <span className="row">{photo.caption}</span>} 
         </div>
     )
 }
