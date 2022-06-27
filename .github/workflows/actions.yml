@@ -22,8 +22,7 @@ jobs:
       - name: Install, Build, & export
         uses: actions/setup-node@v1
       - run: npm install
-      - run: npm run build
-      - run: npm run export
+      - run: npm run build && npm run export
         env:
             CI: true
 
