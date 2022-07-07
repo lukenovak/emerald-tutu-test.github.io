@@ -24,8 +24,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm install && npm run build
-      - run: npm run export
+        run: npm install && npm run build && npm run export
         env:
             CI: true
             NEXT_PUBLIC_GRAPHCMS_URL: ${{ secrets.NEXT_PUUBLIC_GRAPHCMS_URL }}
