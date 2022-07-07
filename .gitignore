@@ -1,8 +1,0 @@
-!*
-.env.local
-.next/
-node_modules/
-.vercel
-
-# MacOS
-.DS_Store
