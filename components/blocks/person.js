@@ -19,15 +19,20 @@ export default function Person({name, title, bio, photo}) {
                     <h4 className='fw-bold font-monument text-green'>{name}</h4>
                     <h5>{title}</h5>
                 </div>
-                <div className='col-2 my-auto text-center'>
-                    <button className='btn blue-bg' onClick={() => setOpen(!open)}>Bio</button>
-                </div>
+                {bio && (
+                    <div className='col-2 my-auto text-center'>
+                        <button className='btn blue-bg' onClick={() => setOpen(!open)}>Bio</button>
+                    </div>
+                )}
             </div>
-            <Collapse in={open}>
-                <div className='row col-lg-10 mx-auto'>
-                    <p className="p-0">{bio}</p>
-                </div>
-            </Collapse>
+            {bio && (
+                <Collapse in={open}>
+                    <div className='row col-lg-10 mx-auto'>
+                        <p className="p-0">{bio}</p>
+                    </div>
+                </Collapse>
+            )}
+
         </div>
         
     )
