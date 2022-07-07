@@ -29,12 +29,10 @@ export default function ImageCarousel({images, id}) {
                 <div className="carousel-arrow left-arrow" onClick={prevSlide}>&lt;</div>
                 <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>
                 {images.map((img, idx) => 
-                        <div className="m-auto"
+                        <div className="m-auto mw-100"
                             key={idx}>
                             {idx === active && (
                                 <img src={img.url}
-                                    width={img.width}
-                                    height={img.height}
                                     alt={img?.altText}
                                 />
                             )}
