@@ -9,6 +9,7 @@ export default function Person({name, title, bio, photo}) {
                 {photo && (
                     <div className="col-4 p-0 person-mh blue-border d-flex">
                         <img
+                            className="mw-100 mh-100"
                             src={photo.url}
                             alt={name}
                         />
