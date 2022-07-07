@@ -28,6 +28,8 @@ jobs:
       - run: npm run export
         env:
             CI: true
+            NEXT_PUBLIC_GRAPHCMS_URL: ${{ secrets.NEXT_PUUBLIC_GRAPHCMS_URL }}
+            GRAPHCMS_TOKEN: ${{ secrets.GRAPHCMS_TOKEN }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
