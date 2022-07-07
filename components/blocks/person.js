@@ -10,8 +10,6 @@ export default function Person({name, title, bio, photo}) {
                     <div className="col-4 p-0 person-mh blue-border d-flex">
                         <img
                             src={photo.url}
-                            height={photo.height}
-                            width={photo.width}
                             alt={name}
                         />
                     </div>
