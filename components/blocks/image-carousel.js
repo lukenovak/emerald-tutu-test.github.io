@@ -14,7 +14,7 @@ export default function ImageCarousel({images, id, maxWidth}) {
     };
 
     return (
-        <div id={id} className="container row">
+        <div id={id} className="container row width-max-content m-auto">
             <div className="position-relative d-flex m-auto">
                 <div className="carousel-arrow left-arrow" onClick={prevSlide}>&lt;</div>
                 <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>

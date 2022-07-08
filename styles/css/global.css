@@ -199,3 +199,7 @@ html, body {
 .site-heading span:nth-child(16) {
     animation-delay: 1.4s;
 }
+
+.width-max-content {
+    width: max-content;
+}
