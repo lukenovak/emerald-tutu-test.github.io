@@ -1,7 +1,6 @@
 export default function Image({image, altText, caption}) {
     return (
-    <div className="m-auto"
-        style={maxWidth && {"max-width": maxWidth + "px"}}>
+    <div className="m-auto">
         {idx === active && (
             <img className="mw-100" 
                 src={image.url}
