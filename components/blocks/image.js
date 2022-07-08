@@ -8,7 +8,7 @@ export default function Image({image, altText, caption}) {
                 alt={altText}
             />
         )}
-        {caption && <span>{img.caption}</span>}
+        {caption && <span className="text-green h6">{img.caption}</span>}
     </div>
     )
    
