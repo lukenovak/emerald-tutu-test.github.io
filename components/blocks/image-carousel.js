@@ -20,11 +20,13 @@ export default function ImageCarousel({images, id, maxWidth}) {
                 <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>
                 {images.map((img, idx) => 
                     <div className="m-auto"
-                    style={maxWidth && {"max-width": maxWidth + "px"}}>
-                    {idx === active && (
-                        <Image {...img}/>
-                    )}
-                </div>)}
+                        style={maxWidth && {"max-width": maxWidth + "px"}}
+                        key={idx}
+                    >
+                        {idx === active && (
+                            <Image {...img}/>
+                        )}
+                    </div>)}
             </div>
         </div>
     )
