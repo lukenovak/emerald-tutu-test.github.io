@@ -1,12 +1,13 @@
 .carousel-arrow {
     position: absolute;
-    top: calc(50% - 1.5rem);
-    font-size: 2rem;
+    top: calc(50% - 2rem);
+    font-size: 3rem;
     z-index: 1;
+    color: #fff
 }
 
 .carousel-arrow:hover {
-    color: #fff;
+    color: blue;
 }
   
 .right-arrow {

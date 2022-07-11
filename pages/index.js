@@ -6,7 +6,7 @@ import Wrapper from '@/components/wrapper'
 import SiteHeading from '@/components/site-heading'
 
 export default function IndexPage({ page }) {
-  return (<div className='gradient-background h-100'>
+  return (<div className='h-100'>
       <div className='mx-auto my-3 d-block text-center'>
         <SiteHeading text="The Emerald Tutu"/>
       </div>
