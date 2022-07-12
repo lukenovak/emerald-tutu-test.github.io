@@ -6,7 +6,7 @@ body {
 }
 
 .text {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 span {
@@ -19,7 +19,7 @@ span {
 
 .gradient-background {
     color: #eeeeee;
-    background: linear-gradient(0.25turn, blue, limegreen);
+    background: linear-gradient(0.25turn, blue, #208520);
 }
 
 .hidden-link a {
@@ -38,16 +38,16 @@ span {
 }
 
 .green-bg {
-    background: limegreen;
-    color: blue;
+    background: #208520;
+    color: skyblue;
 }
 
 .green-bg.hidden-link a {
-    color: blue;
+    color: skyblue;
 }
 
 .green-bg.hidden-link a:hover {
-    color: skyblue;
+    color: blue;
 }
 
 .header {
@@ -99,7 +99,7 @@ html, body {
 }
 
 .text-green {
-    color: limegreen;
+    color: #208520;
 }
 
 .person-mh {
@@ -198,4 +198,8 @@ html, body {
 
 .site-heading span:nth-child(16) {
     animation-delay: 1.4s;
+}
+
+.width-max-content {
+    width: max-content;
 }
