@@ -14,12 +14,11 @@ export default function ImageCarousel({images, id, maxWidth}) {
     };
 
     return (
-        <div id={id} className="container row width-max-content m-auto mb-2">
-            <div className="position-relative d-flex m-auto">
-                <div className="carousel-arrow left-arrow" onClick={prevSlide}>&lt;</div>
-                <div className="carousel-arrow right-arrow" onClick={nextSlide}>&gt;</div>
+        <div id={id} className="row width-max-content w-100 m-auto py-2 mb-2 blue-bg">
+            <div className="m-auto">
                 {images.map((img, idx) => 
-                    <div className="m-auto"
+                    <div
+                        className="m-auto"
                         style={maxWidth && {"max-width": maxWidth + "px"}}
                         key={idx}
                     >
@@ -27,6 +26,15 @@ export default function ImageCarousel({images, id, maxWidth}) {
                             <Image {...img}/>
                         )}
                     </div>)}
+            </div>
+            <div className="d-flex">
+                <div className="carousel-arrow col-4 left-arrow" onClick={prevSlide}>←</div>
+                <div className="col-4 d-flex">
+                    <div className="my-auto mx-auto d-flex">
+                        {images.map((img, idx) => <div className="circle"/>)}
+                    </div>
+                </div>
+                <div className="carousel-arrow col-4 right-arrow" onClick={nextSlide}>→</div>
             </div>
         </div>
     )
