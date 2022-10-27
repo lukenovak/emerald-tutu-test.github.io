@@ -14,7 +14,7 @@ export default function ImageCarousel({images, id, maxWidth}) {
     };
 
     return (
-        <div id={id} className="row width-max-content w-100 m-auto pt-4 pb-2 mb-2 blue-bg">
+        <div id={id} className="width-max-content w-100 my-auto mx-0 pt-4 pb-2 mb-2 blue-bg">
             <div className="m-auto">
                 {images.map((img, idx) => 
                     <div
@@ -27,7 +27,7 @@ export default function ImageCarousel({images, id, maxWidth}) {
                         )}
                     </div>)}
             </div>
-            <div className="d-flex">
+            <div className="d-flex mx-5">
                 <div className="carousel-arrow col-4 left-arrow" onClick={prevSlide}>←</div>
                 <div className="col-4 d-flex">
                     <div className="my-auto mx-auto d-flex">
