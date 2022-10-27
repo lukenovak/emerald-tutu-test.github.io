@@ -14,7 +14,7 @@ export default function ImageCarousel({images, id, maxWidth}) {
     };
 
     return (
-        <div id={id} className="row width-max-content w-100 m-auto py-2 mb-2 blue-bg">
+        <div id={id} className="row width-max-content w-100 m-auto pt-4 pb-2 mb-2 blue-bg">
             <div className="m-auto">
                 {images.map((img, idx) => 
                     <div
