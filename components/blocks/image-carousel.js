@@ -27,11 +27,17 @@ export default function ImageCarousel({images, id, maxWidth}) {
                         )}
                     </div>)}
             </div>
-            <div className="d-flex mx-5">
+            <div className="d-flex mx-auto"
+                style={maxWidth && {"max-width": maxWidth + "px"}}
+                >
                 <div className="carousel-arrow col-4 left-arrow" onClick={prevSlide}>←</div>
                 <div className="col-4 d-flex">
                     <div className="my-auto mx-auto d-flex">
-                        {images.map((img, idx) => <div className="circle"/>)}
+                        {images.map((img, idx) => 
+                            <div>
+                                {idx === active && (<div className="circle bg-green"/>)}
+                                {idx !== active && (<div className="circle bg-white"/>)}
+                            </div>)}
                     </div>
                 </div>
                 <div className="carousel-arrow col-4 right-arrow" onClick={nextSlide}>→</div>

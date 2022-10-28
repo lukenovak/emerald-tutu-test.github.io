@@ -37,16 +37,16 @@ span {
     color: #ffffff;
 }
 
-.green-bg {
+.bg-green {
     background: #208520;
     color: skyblue;
 }
 
-.green-bg.hidden-link a {
+.bg-green.hidden-link a {
     color: skyblue;
 }
 
-.green-bg.hidden-link a:hover {
+.bg-green.hidden-link a:hover {
     color: blue;
 }
 
