@@ -9,7 +9,7 @@ export default function ImageCarousel({images, id, maxWidth}) {
         setActive(active === length - 1 ? 0 : active + 1);
     };
     
-      const prevSlide = () => {
+    const prevSlide = () => {
         setActive(active === 0 ? length - 1 : active - 1);
     };
 

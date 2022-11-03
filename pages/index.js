@@ -14,7 +14,7 @@ export default function IndexPage({ page }) {
     </div>)
 }
 
-export async function getStaticProps({preview = false }) {
+export async function getStaticProps({preview = true }) {
   const client = graphcmsClient(preview)
 
   const { page } = await client.request(pageQuery, {

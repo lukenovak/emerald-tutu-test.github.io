@@ -22,7 +22,7 @@ function PreviewBanner({ enabled = false }) {
   )
 }
 
-export default function SiteLayout({ children, page, preview = false }) {
+export default function SiteLayout({ children, page, preview = true }) {
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', 
