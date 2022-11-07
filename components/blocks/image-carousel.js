@@ -13,6 +13,10 @@ export default function ImageCarousel({images, id, maxWidth}) {
         setActive(active === 0 ? length - 1 : active - 1);
     };
 
+    const goToSlide = (event) => {
+        setActive(parseInt(event.target.dataset.index));
+    }
+
     return (
         <div id={id} className="width-max-content w-100 my-auto mx-0 pt-4 pb-2 mb-2 blue-bg">
             <div className="m-auto">
@@ -34,9 +38,9 @@ export default function ImageCarousel({images, id, maxWidth}) {
                 <div className="col-4 d-flex">
                     <div className="my-auto mx-auto d-flex">
                         {images.map((img, idx) => 
-                            <div>
-                                {idx === active && (<div className="circle bg-green"/>)}
-                                {idx !== active && (<div className="circle bg-white"/>)}
+                            <div key={idx} onClick={goToSlide}>
+                                {idx === active && (<div data-index={idx} className="circle bg-green"/>)}
+                                {idx !== active && (<div data-index={idx} className="circle bg-white"/>)}
                             </div>)}
                     </div>
                 </div>
