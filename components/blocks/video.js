@@ -18,11 +18,11 @@ export default function Video({video}){
         return minutes + ":" + seconds
     }
     const setPlaying = () => {
+        !playerState.isPlaying ? ref.current.play() : ref.current.pause()
         setPlayerState({
             ...playerState,
             isPlaying: !playerState.isPlaying
         })
-        playerState.isPlaying ? ref.current.play() : ref.current.pause()
     }
 
     const updateProgress = () => {
