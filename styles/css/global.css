@@ -39,11 +39,11 @@ span {
 
 .bg-green {
     background: limegreen;
-    color: skyblue;
+    color: blue;
 }
 
 .bg-green.hidden-link a {
-    color: skyblue;
+    color: blue;
 }
 
 .bg-green.hidden-link a:hover {

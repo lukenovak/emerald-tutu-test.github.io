@@ -1,6 +1,12 @@
+import { useEffect } from "react"
 import PageNav from "./page-nav"
 
 export default function Footer({pages, address}) {
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            console.log('timeout hit')
+        }, 2)
+    })
     return(
         <div className="blue-bg">
             <div className="text-center justify-content-center">
