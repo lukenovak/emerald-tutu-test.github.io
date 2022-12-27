@@ -1,4 +1,4 @@
-import { useState } from "react"
+import SiteLogo from "./site-logo"
 
 // ONLY ONE OF THESE SHOULD BE USED ON A PAGE (REALLY FOR THE WHOLE SITE)
 export default function SiteHeading({text}) {
@@ -9,13 +9,4 @@ export default function SiteHeading({text}) {
         </div>
     )
 
-}
-
-
-function SiteLogo({text}) {
-    const [isPaused, setPause] = useState()
-
-    return text.split('').map((ltr, idx) => {
-        return ltr !== " " ? <span key={"sh"+idx}>{ltr}</span> : <div key={"sh"+idx}/>
-    })
 }
