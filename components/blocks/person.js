@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import { Collapse } from 'react-bootstrap'
+import Circle from '../circle'
 
 export default function Person({name, title, bio, photo}) {
-    const [open, setOpen] = useState(false)
     return (
-        <div className="container col-lg-10 p-0 my-3">
-            <div className="row mb-3">
-                {photo && (
+        <div className="p-0 my-3">
+            <div className="mb-3">
+                {/* photo currently unused. find out if we still need this
+                photo && (
                     <div className="col-4 p-0 person-mh blue-border d-flex">
                         <img
                             className="mw-100 mh-100"
@@ -14,24 +13,15 @@ export default function Person({name, title, bio, photo}) {
                             alt={name}
                         />
                     </div>
-                )}
-                <div className="col-6 my-auto">
-                    <h4 className='fw-bold font-monument text-green'>{name}</h4>
-                    <h5>{title}</h5>
+                ) */}
+                <div className="d-flex font-monument mb-3">
+                    <Circle size="22"/>
+                    <h3 className='ms-3 my-auto fw-bold'>{name}, {title}</h3>
                 </div>
-                {bio && (
-                    <div className='col-2 my-auto text-center'>
-                        <button className='btn blue-bg' onClick={() => setOpen(!open)}>Bio</button>
-                    </div>
-                )}
             </div>
-            {bio && (
-                <Collapse in={open}>
-                    <div className='row col-lg-10 mx-auto'>
-                        <p className="p-0">{bio}</p>
-                    </div>
-                </Collapse>
-            )}
+            <div className='mx-auto'>
+                <p>{bio}</p>
+            </div>
 
         </div>
         
