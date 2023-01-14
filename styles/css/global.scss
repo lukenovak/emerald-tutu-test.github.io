@@ -66,6 +66,13 @@ span {
     color: blue;
 }
 
+.text-underline-green {
+    text-decoration: underline;
+    text-decoration-color: limegreen;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
 .header {
     font-size: 22pt;
     line-height: 28pt;

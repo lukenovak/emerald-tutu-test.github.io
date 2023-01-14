@@ -4,7 +4,7 @@ export default function Text({paragraphs, isBlueBackground}) {
         <div className="text w-auto">
             {paragraphs.map((paragraph, idx) => {
                 return (
-                <div key={idx} className="row justify-content-center">
+                <div key={idx} className="justify-content-center">
                     <p className={"mb-2 p-0" + (isBlueBackground ? " blue-bg" : "")}>{paragraph}</p>
                 </div>
                 )
