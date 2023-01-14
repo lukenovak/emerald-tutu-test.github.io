@@ -1,3 +1,14 @@
+@import "bootstrap/scss/functions"; 
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.site-container {
+    @include make-container();
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
     color: blue;
@@ -5,8 +16,18 @@ body {
     overflow-x:hidden;
 }
 
+h2 {
+    font-size: 22pt;
+    line-height: 28pt;
+}
+
 .text {
-    font-size: 1rem;
+    font-size: 22pt;
+    line-height: 28pt;
+    @include media-breakpoint-up(md) {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
 }
 
 span {
@@ -46,6 +67,8 @@ span {
 }
 
 .header {
+    font-size: 22pt;
+    line-height: 28pt;
     z-index: 1100;
 }
 
@@ -101,6 +124,20 @@ html, body {
     max-height: 240px;
     max-width: 240px;
 }
+
+
+.info-tip {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    min-height: 3.3rem;
+}
+
+.info-tip:hover {
+    border-radius: 0%;
+    aspect-ratio: inherit;
+}
+
 
 /* site heading + animation stuff */
 .site-heading {

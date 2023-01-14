@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import '../styles/css/global.css'
+import '../styles/css/global.scss'
 import '../styles/css/fonts.css'
 import '../styles/css/components/image-carousel.css'
 import '../styles/css/components/video.css'
