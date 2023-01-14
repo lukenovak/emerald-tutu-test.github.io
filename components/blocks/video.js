@@ -62,11 +62,16 @@ export default function Video({video}){
 
     return(
     <div className="container">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
         {videoElement}
         <div className="d-flex w-100">
             <div className="me-2">{playerState.currentTimeString}</div>
-            {!playerState.isPlaying && (<div onClick={setPlaying} className="me-2">Play</div>)}
-            {playerState.isPlaying && (<div onClick={setPlaying} className="me-2">Pause</div>)}
+            {!playerState.isPlaying && (<span onClick={setPlaying} className="me-2 material-symbols-outlined my-auto">
+                play_arrow
+            </span>)}
+            {playerState.isPlaying && (<span onClick={setPlaying} className="me-2 my-auto material-symbols-outlined">
+                pause
+            </span>)}
             <input
                 className="video-progress-bar m-auto w-100"
                 type="range"
