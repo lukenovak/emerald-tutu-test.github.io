@@ -5,7 +5,7 @@ export default function Text({paragraphs, isBlueBackground}) {
             {paragraphs.map((paragraph, idx) => {
                 return (
                 <div key={idx} className="justify-content-center">
-                    <p className={"mb-2 p-0" + (isBlueBackground ? " blue-bg" : "")}>{paragraph}</p>
+                    <p className={"mb-2 p-0" + (isBlueBackground ? " blue-bg text-center p-1 mt-1" : "")}>{paragraph}</p>
                 </div>
                 )
             })}

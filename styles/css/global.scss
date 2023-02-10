@@ -48,6 +48,16 @@ span {
     text-decoration: none;
 }
 
+.blue-bg .hidden-link  a {
+    color: white;
+    text-decoration: none;
+}
+
+.blue-bg .hidden-link a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .blue-bg {
     background: blue;
     color: #ffffff;
@@ -138,11 +148,12 @@ html, body {
     aspect-ratio: 1/1;
     max-width: 400px;
     min-height: 3.3rem;
+    position:relative
 }
 
 .info-tip:hover {
-    border-radius: 0%;
-    aspect-ratio: inherit;
+    margin-right: 1rem;
+    max-height:min-content;
 }
 
 .circle {
@@ -264,4 +275,32 @@ html, body {
 
 .width-max-content {
     width: max-content;
+}
+
+
+/* growing footer animation */
+@keyframes grow-footer {
+    from {margin-bottom: 0px;}
+    to {margin-bottom: 1000px;}
+}
+
+.growing-portion {
+    height: 1px
+}
+
+.growing-footer {
+    position: relative;
+    bottom: 0;
+    animation-name: grow-footer;
+    animation-duration: 10s;
+}
+
+/* fade in for collapsables */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
+.fade-in {
+    animation: fadeIn 1s;
 }

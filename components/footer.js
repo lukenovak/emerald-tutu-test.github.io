@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useIdleTimer } from "react-idle-timer"
 import PageNav from "./page-nav"
 
@@ -9,20 +10,16 @@ export default function Footer({pages, address}) {
     }
 
     const onIdle = () => {
-        while (true) {
-            //console.log('running')
-            //const footer = document.getElementById("footer")
-            //footer.style.height = footer.offsetHeight + 1000 + "px"
-        }
-
+        const footer = document.getElementById("growing-portion");
+        footer.classList.add("growing-footer");
     }
 
     const onReset = () => {
-        const footer = document.getElementById("footer")
-        footer.style.removeProperty('height')
+        const footer = document.getElementById("growing-portion")
+        footer.classList.remove("growing-footer")
     }
 
-    //const idleTimer = useIdleTimer({onIdle, onAction: onReset, timeout: TIMEOUT_INTERVAL})
+    const idleTimer = useIdleTimer({onIdle, onAction: onReset, timeout: TIMEOUT_INTERVAL})
 
     return(
         <div id="footer" className="blue-bg">
@@ -32,12 +29,13 @@ export default function Footer({pages, address}) {
                         <span className="align-self-center">{address}</span>
                     </div>
                         {pages.map((page, idx) => 
-                            <div key={idx}>
+                            <div className="d-flex" style={{"maxWidth": "fit-content"}} key={idx}>
                                 <PageNav {...page}/>
                             </div>
                         )}
                 </div>
             </div>
+            <div id="growing-portion" className="growing-portion"></div>
         </div>
     )
 }
