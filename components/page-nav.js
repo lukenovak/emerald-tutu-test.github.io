@@ -5,7 +5,7 @@ export const ALWAYS_SHOW = "default"
 
 export default function PageNav({pageNumber, title, slug, blocks, id}, mode = ALWAYS_SHOW){
     return(
-        <div key={id} className="hidden-link">
+        <div key={id} className="hidden-link mx-auto">
             <div className="d-inline font-weight-bold hidden-link">
                 <a className="font-monument" href={slug}>{circleNum(pageNumber)} {title}</a>
             </div>

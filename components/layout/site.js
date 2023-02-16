@@ -36,5 +36,5 @@ export default function SiteLayout({ children, page, preview = true }) {
 }
 
 export const getLayout = (page) => (
-  <SiteLayout {...page.props}>{page}</SiteLayout>
+    <SiteLayout {...page.props}>{page}</SiteLayout>
 )
