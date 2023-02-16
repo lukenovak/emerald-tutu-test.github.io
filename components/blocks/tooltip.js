@@ -8,11 +8,11 @@ export default function Tooltip({xPos, yPos, number, text, id}) {
             key={id} 
             className="position-absolute d-flex text-bold p-2 align-middle annotation overflow-visible"
             style={positionStyles}>
-            <div className="h2 my-0 mx-auto info-tip d-flex blue-bg align-content-middle">
+            <div className="h2 position-relative top-0 mb-auto mx-auto info-tip d-flex blue-bg align-content-middle">
                 <span className="m-auto">{"" + number}</span>
             </div>
-            <div className="annotation-text p-2">
-                <p className="ms-3 blue-bg p-2 fade-in my-auto">{text}</p>
+            <div className="annotation-text">
+                <p className="ms-2 blue-bg p-2 fade-in my-auto">{text}</p>
             </div>
         </div>
     )

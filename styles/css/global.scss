@@ -125,6 +125,8 @@ html, body {
     display: none;
     transition-property: width;
     transition-duration: 1s;
+    flex-shrink: 0;
+    max-width: 300px;
 }
 
 .annotation:hover .annotation-text {
