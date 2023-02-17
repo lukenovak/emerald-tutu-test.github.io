@@ -1,16 +1,8 @@
 .carousel-arrow {
-    font-size: 3rem;
+    font-size: 48dp;
     font-weight: bold;
     z-index: 1;
     color: #fff
-}
-
-.right-arrow {
-    text-align: right;
-}
-
-.left-arrow {
-    text-align: left;
 }
 
 .circle {

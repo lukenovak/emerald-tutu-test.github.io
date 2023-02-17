@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Image from "./image";
 
-export default function ImageCarousel({images, id, maxWidth}) {
+export default function ImageCarousel({images, id}) {
+    console.log(images)
     const [active, setActive] = useState(0);
     const length = images.length;
 
@@ -17,25 +18,35 @@ export default function ImageCarousel({images, id, maxWidth}) {
         setActive(parseInt(event.target.dataset.index));
     }
 
+    var maxWidth = 0;
+    var maxHeight = 0;
+    for (const img of images) {
+        maxWidth = Math.max(maxWidth, img.image.width)
+        maxHeight = Math.max(maxHeight, img.image.height)
+    }
+
+    console.log(maxWidth)
+
     return (
-        <div id={id} className="width-max-content w-100 my-auto mx-0 pt-4 pb-2 mb-2 blue-bg">
-            <div className="m-auto">
+        <div id={id} className="width-max-content w-100 my-auto mx-0 pt-4 pb-2 mb-2 blue-bg d-flex flex-column">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+            <div className="mx-auto mt-auto">
                 {images.map((img, idx) => 
                     <div
-                        className="m-auto"
-                        style={maxWidth && {"max-width": maxWidth + "px"}}
+                        className="d-flex"
                         key={idx}
                     >
                         {idx === active && (
                             <Image {...img}/>
                         )}
                     </div>)}
-            </div>
-            <div className="d-flex mx-auto"
-                style={maxWidth && {"max-width": maxWidth + "px"}}
-                >
-                <div className="carousel-arrow col-4 left-arrow" onClick={prevSlide}>←</div>
-                <div className="col-4 d-flex">
+                <div className="d-flex w-100">
+                <div className="carousel-arrow me-auto d-flex" onClick={prevSlide}>
+                    <span class="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
+                    arrow_back
+                    </span>
+                </div>
+                <div className="d-flex">
                     <div className="my-auto mx-auto d-flex">
                         {images.map((img, idx) => 
                             <div key={idx} onClick={goToSlide}>
@@ -44,7 +55,12 @@ export default function ImageCarousel({images, id, maxWidth}) {
                             </div>)}
                     </div>
                 </div>
-                <div className="carousel-arrow col-4 right-arrow" onClick={nextSlide}>→</div>
+                <div className="carousel-arrow ms-auto d-flex" onClick={nextSlide}>
+                    <span class="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
+                    arrow_forward
+                    </span>
+                </div>
+            </div>
             </div>
         </div>
     )
