@@ -23,7 +23,7 @@ export default function Footer({pages, address}) {
                     <span className="align-self-center">{address}</span>
                 </div>
                     {pages.map((page, idx) => 
-                        <div className="text-center d-flex mx-auto" style={{"maxWidth": "200px"}} key={idx}>
+                        <div className="d-flex mx-auto" style={{"maxWidth": "200px"}} key={idx}>
                             <PageNav {...page}/>
                         </div>
                     )}

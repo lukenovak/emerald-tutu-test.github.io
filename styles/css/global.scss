@@ -30,6 +30,13 @@ h2 {
     }
 }
 
+.text-margins {
+    @include media-breakpoint-up(md) {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+
 span {
     font-weight: bold;
 }
