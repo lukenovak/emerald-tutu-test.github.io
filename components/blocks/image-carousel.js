@@ -42,7 +42,7 @@ export default function ImageCarousel({images, id}) {
                     </div>)}
                 <div className="d-flex w-100">
                 <div className="carousel-arrow me-auto d-flex" onClick={prevSlide}>
-                    <span class="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
+                    <span className="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
                     arrow_back
                     </span>
                 </div>
@@ -56,7 +56,7 @@ export default function ImageCarousel({images, id}) {
                     </div>
                 </div>
                 <div className="carousel-arrow ms-auto d-flex" onClick={nextSlide}>
-                    <span class="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
+                    <span className="material-symbols-outlined my-auto" style={{fontSize:"48px", fontWeight:"700"}}>
                     arrow_forward
                     </span>
                 </div>

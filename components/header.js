@@ -26,13 +26,13 @@ export default function Header({pages, _}) {
         <a href="/">
             <SiteLogo text="Emerald Tutu"/>
         </a>
-        {pages?.map((page, _) => 
-            <div className="d-inline mx-auto font-weight-bold hidden-link">
+        {pages?.map((page, idx) => 
+            <div className="d-inline mx-auto font-weight-bold hidden-link" key={idx}>
                 <a className="font-monument" href={page.slug}>{circleNum(page.pageNumber)} {page.title}</a>
             </div>
         )}
         <div className="d-flex" onClick={()=> window.scrollTo({top: 0})}>
-            <span class="material-symbols-outlined my-auto text-bold">
+            <span className="material-symbols-outlined my-auto text-bold">
             arrow_upward
             </span>
         </div>

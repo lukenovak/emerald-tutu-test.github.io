@@ -9,6 +9,7 @@ export default function PageHeading({page}) {
                 <div>
                     {page.title}
                 </div>
+                
             </div>    
         </div>
 }
